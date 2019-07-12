@@ -24,13 +24,13 @@ function getEntryFragment(entryKey) {
   }
   links += "</p>";
   var entryTemplate = `
-  <div class="row">
-    <div class="col-4 col-6-medium col-12-small">
+  <div class="row entryRow">
+    <div class="col-4 col-12-medium">
       <a href="${entry["img_url"]}" class="image fit">
         <img src="${entry["image"]}">
       </a>
     </div>
-    <div class="col-8 col-6-medium col-12-small">
+    <div class="col-8 col-12-medium">
       <h3>${entry["title"]}</h3>
       <p>${entry["description"]}</p>
       ${links}
@@ -48,6 +48,7 @@ function makeLinkTag(text, url) {
 
 function addEntries() {
   var mobile = document.getElementById("mobileSection");
+  mobileSection.appendChild(getEntryFragment("example"));
   mobileSection.appendChild(getEntryFragment("example"));
 }
 

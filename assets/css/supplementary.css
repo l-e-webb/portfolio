@@ -1,5 +1,44 @@
-img {
-  /*max-width: 100%;*/
+body {
+  background-color: steelblue;
+  background-image: none;
+  color: #555;
+  font-size: 16pt;
+}
+
+header > p {
+  color: #888;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+ul, ol, dl, table, blockquote, form {
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.75em;
+}
+
+h4, h5, h6 {
+  font-size: 1.05em;
+  margin-bottom: 0.75em;
+}
+
+.image img {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .outerYoutubeContainer {
@@ -29,6 +68,11 @@ img {
   height: 100%;
 }
 
+.contactList {
+  list-style: inside;
+  padding-left: 0;
+}
+
 .contactList li {
   font-size: 20pt;
   padding-bottom: 10px;
@@ -38,6 +82,15 @@ img {
   padding: 0 8px;
 }
 
+.entryRow {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 #nav a span {
   width: 6.5em;
+}
+
+#main > .panel {
+  padding-top: 2.5em;
 }
