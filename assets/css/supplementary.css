@@ -83,8 +83,12 @@ h4, h5, h6 {
 }
 
 .entryRow {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.innerEntryRow {
+  padding-top: 0;
 }
 
 #nav a span {
