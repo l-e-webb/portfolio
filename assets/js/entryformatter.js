@@ -1,18 +1,8 @@
 var entries = {
-  "example": {
-    "title": "Example Entry",
-    "description": "Lorem ipsum enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.",
-    "image": "images/pic01.jpg",
-    "image_url": "https://google.com",
-    "links": [
-      ["Play", "https://google.com"],
-      ["Source", "https://google.com"]
-    ]
-  },
   "crossfade": {
     "title": "CrossFade",
     "description": "A simple (but deep) puzzle game. Pressing a tile toggles the lights on all tiles in that row and column. Try to turn off all the lights! (New version with improved UI coming to a Google Play store near you!)",
-    "image": "images/pic01.jpg",
+    "image": "images/crossfade.png",
     "image_url": "https://l-e-webb.github.io/crossfade",
     "links": [
       ["Play in browser", "https://l-e-webb.github.io/crossfade"],
@@ -22,7 +12,7 @@ var entries = {
   "budabest_guide": {
     "title": "Budapest Guide",
     "description": "A static app providing trivia about Budapest, Hungary. Designed to demonstrate ViewPager usage and image formatting in Android.",
-    "image": "images/pic01.jpg",
+    "image": "images/budapest_guide.png",
     "image_url": "https://github.com/l-e-webb/budabest_guide",
     "links": [
       ["Source", "https://github.com/l-e-webb/budabest_guide"]
@@ -30,8 +20,8 @@ var entries = {
   },
   "book_listing": {
     "title": "Book Listing",
-    "description": "A simple app which queries the Google Books API to deliver book titles related to a search term. Designed to demonstrate networking in Android.",
-    "image": "images/pic01.jpg",
+    "description": "A simple app which queries the Google Books API to deliver book titles related to a search term. Designed to demonstrate networking and JSON parsing in Android.",
+    "image": "images/book_listing.png",
     "image_url": "https://github.com/l-e-webb/book_listing",
     "links": [
       ["Source", "https://github.com/l-e-webb/book_listing"]
@@ -39,8 +29,8 @@ var entries = {
   },
   "guardian_science_reader": {
     "title": "Guardian Science Reader",
-    "description": "Displays latest science & technology articles by querying The Guardian's API. Designed to demonstrate AdapterView usage and two-pane tablet UI's in Android.",
-    "image": "images/pic01.jpg",
+    "description": "Displays latest science & technology articles by querying The Guardian's API. Designed to demonstrate AdapterView usage and two-pane tablet UI in Android.",
+    "image": "images/guardian_science_reader.png",
     "image_url": "https://github.com/l-e-webb/guardian_science_reader",
     "links": [
       ["Source", "https://github.com/l-e-webb/guardian_science_reader"]
@@ -48,8 +38,8 @@ var entries = {
   },
   "space_kerfuffle": {
     "title": "Space Kerfuffle!",
-    "description": "A arcade-style space combat game, named in honor of Spacewar! (the first ever video game!). Designed to demonstrate basic 2D game development techniques.",
-    "image": "images/pic01.jpg",
+    "description": "A arcade-style space combat game, named in honor of \"Spacewar!\" (the first ever video game). Designed to demonstrate basic 2D game development techniques.",
+    "image": "images/space_kerfuffle.png",
     "image_url": "https://l-e-webb.github.io/space_kerfuffle",
     "links": [
       ["Play in browser", "https://l-e-webb.github.io/space_kerfuffle"],
@@ -59,7 +49,7 @@ var entries = {
   "outbreak": {
     "title": "Outbreak",
     "description": "A mobile remake of the classic Atari game Breakout. Designed to demonstrate accelerometer controls.",
-    "image": "images/pic01.jpg",
+    "image": "images/outbreak.png",
     "image_url": "https://l-e-webb.github.io/outbreak",
     "links": [
       ["Play in browser", "https://l-e-webb.github.io/outbreak"],
@@ -69,7 +59,7 @@ var entries = {
   "asteroidal_projection": {
     "title": "Asteroidal Projection",
     "description": "A arcade-style space combat game, but with a twist. The entire infinite 2D playing field is projected radially (or mapped homeomorphically, for the topolgy nerds out there) into a disk.",
-    "image": "images/pic01.jpg",
+    "image": "images/asteroidal_projection.png",
     "image_url": "https://l-e-webb.github.io/asteroidal_projection",
     "links": [
       ["Play", "https://l-e-webb.github.io/asteroidal_projection"],
@@ -79,7 +69,7 @@ var entries = {
   "stereographic_maze": {
     "title": "Stereographic Maze",
     "description": "Have you ever wanted to navigate a maze on the surface of the sphere, viewed from the comfort of your 2D monitor? No? Oh. Well, in stereographic maze, you can do just that.",
-    "image": "images/pic01.jpg",
+    "image": "images/stereographic_maze.png",
     "image_url": "https://tangledwebgames.itch.io/stereographic_maze",
     "links": [
       ["Play", "https://tangledwebgames.itch.io/stereographic_maze"],
@@ -87,9 +77,9 @@ var entries = {
     ]
   },
   "interpolate": {
-    "title": "interpolate()",
-    "description": "Not a game, but a Lagrange Polynomial visualizer. Can be used to experiment with interpolation points, or make pretty animations.",
-    "image": "images/pic01.jpg",
+    "title": ".interpolate()",
+    "description": "Not a game, but a Lagrange Polynomial visualizer. Graphs polynomials that pass through a specific set of points. Can be used to experiment with draggable interpolation points, or make pretty animations.",
+    "image": "images/interpolate.png",
     "image_url": "https://l-e-webb.github.io/interpolate",
     "links": [
       ["Use", "https://l-e-webb.github.io/interpolate"],
@@ -99,7 +89,7 @@ var entries = {
   "the_blue_room": {
     "title": "The Blue Room",
     "description": "A re-imagining of the classic room escape adventure game, in The Blue Room, the real obstacle to escape is the protagonist's depression and agoraphobia.",
-    "image": "images/pic01.jpg",
+    "image": "images/the_blue_room.png",
     "image_url": "https://tangledwebgames.itch.io/the_blue_room",
     "links": [
       ["Download", "https://tangledwebgames.itch.io/the_blue_room"]
@@ -107,8 +97,8 @@ var entries = {
   },
   "housewarming": {
     "title": "Housewarming",
-    "description": "A one-man effort for Global Game Jam 2019 (prompt: What does home mean to you?), Housewarming is a dialogue-based point-and-click adventure game.",
-    "image": "images/pic01.jpg",
+    "description": "A one-person effort for Global Game Jam 2019 (prompt: What does home mean to you?), Housewarming is a dialogue-based point-and-click adventure game.",
+    "image": "images/housewarming.png",
     "image_url": "https://tangledwebgames.itch.io/housewarming",
     "links": [
       ["Download", "https://tangledwebgames.itch.io/housewarming"]
@@ -117,16 +107,16 @@ var entries = {
   "ultraviolet_nowhere": {
     "title": "Ultraviolet Nowhere",
     "description": "An atmospheric (literally) experience. Point your telescope into the void, and the void may look back. Made for Global Game Jam 2018 (prompt: transmission).",
-    "image": "images/pic01.jpg",
+    "image": "images/ultraviolet_nowhere.png",
     "image_url": "https://tangledwebgames.itch.io/ultraviolet_nowhere",
     "links": [
-      ["Download", "https://tangledwebgames.itch.io/ultraviolet_nowhere"]
+      ["Play in browser", "https://l-e-webb.github.io/ultraviolet_nowhere"]
     ]
   },
   "bad_moon": {
     "title": "Bad Moon",
     "description": "A short action game. Fly around on rocket skates and fight your way through waves of malicious drones. Made for Global Game Jam 2017 (prompt: waves).",
-    "image": "images/pic01.jpg",
+    "image": "images/bad_moon.png",
     "image_url": "https://calamityjive.itch.io/badmoon",
     "links": [
       ["Play in browser", "https://calamityjive.itch.io/badmoon"]

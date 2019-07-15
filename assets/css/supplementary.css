@@ -27,12 +27,12 @@ h2 {
 
 h3 {
   font-size: 1.3em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.6em;
 }
 
 h4, h5, h6 {
   font-size: 1.05em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.6em;
 }
 
 .image img {
@@ -84,7 +84,7 @@ h4, h5, h6 {
 
 .entryRow {
   margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
 }
 
 .innerEntryRow {
