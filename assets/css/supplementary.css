@@ -98,3 +98,15 @@ h4, h5, h6 {
 #main > .panel {
   padding-top: 2.5em;
 }
+
+#main > .panel.intro .pic {
+  width: 600px;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  #main > .panel.intro .pic {
+    width: 100%;
+    max-width: 600px;
+  }
+}

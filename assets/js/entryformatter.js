@@ -97,12 +97,10 @@ var entries = {
   },
   "housewarming": {
     "title": "Housewarming",
-    "description": "A one-person effort for Global Game Jam 2019 (prompt: What does home mean to you?), Housewarming is a dialogue-based point-and-click adventure game.",
+    "description": "A one-person effort for Global Game Jam 2019 (prompt: What does home mean to you?), Housewarming is a dialogue-based point-and-click adventure game. Download link coming soon.",
     "image": "images/housewarming.png",
     "image_url": "https://tangledwebgames.itch.io/housewarming",
-    "links": [
-      ["Download", "https://tangledwebgames.itch.io/housewarming"]
-    ]
+    "links": []
   },
   "ultraviolet_nowhere": {
     "title": "Ultraviolet Nowhere",
@@ -136,6 +134,7 @@ function getEntryFragment(entryKey) {
     }
   }
   links += "</p>";
+  if (entry["links"].length == 0) links = "";
   var entryTemplate = `
   <div class="row entryRow">
     <div class="col-12 innerEntryRow">
