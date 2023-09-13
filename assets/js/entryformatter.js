@@ -1,12 +1,22 @@
 var entries = {
+  "dat_one": {
+    "title": "DAT One",
+    "description": "A one-stop-shop for everything an on-the-go trucker needs, such as turn-by-turn directions, the location of nearby truck stops, a load board to find new freight, and much more.",
+    "image": "images/dat_one_mobile.png",
+    "image_url": "https://play.google.com/store/apps/details?id=com.dat.unified",
+    "links": [
+      ["View on Google Play", "https://play.google.com/store/apps/details?id=com.dat.unified"]
+    ]
+  },
   "crossfade": {
     "title": "CrossFade",
-    "description": "A simple (but deep) puzzle game. Pressing a tile toggles the lights on all tiles in that row and column. Try to turn off all the lights! (New version with improved UI coming to a Google Play store near you!)",
+    "description": "A simple (but deep) puzzle game. Pressing a tile toggles the lights on all tiles in that row and column. Try to turn off all the lights!",
     "image": "images/crossfade.png",
     "image_url": "https://l-e-webb.github.io/crossfade",
     "links": [
       ["Play in browser", "https://l-e-webb.github.io/crossfade"],
-      ["Source", "https://github.com/l-e-webb/crossfade"]
+      ["View on Google Play", "https://play.google.com/store/apps/details?id=com.tangledwebgames.crossfade"],
+      ["Source", "https://tangledwebgames.itch.io/crossfade"]
     ]
   },
   "budabest_guide": {
@@ -42,7 +52,7 @@ var entries = {
     "image": "images/space_kerfuffle.png",
     "image_url": "https://l-e-webb.github.io/space_kerfuffle",
     "links": [
-      ["Play in browser", "https://l-e-webb.github.io/space_kerfuffle"],
+      ["Play", "https://l-e-webb.github.io/space_kerfuffle"],
       ["Source", "https://github.com/l-e-webb/space_kerfuffle"]
     ]
   },
@@ -52,7 +62,7 @@ var entries = {
     "image": "images/outbreak.png",
     "image_url": "https://l-e-webb.github.io/outbreak",
     "links": [
-      ["Play in browser", "https://l-e-webb.github.io/outbreak"],
+      ["Play", "https://l-e-webb.github.io/outbreak"],
       ["Source", "https://github.com/l-e-webb/outbreak"]
     ]
   },
@@ -97,27 +107,57 @@ var entries = {
   },
   "housewarming": {
     "title": "Housewarming",
-    "description": "A one-person effort for Global Game Jam 2019 (prompt: What does home mean to you?), Housewarming is a dialogue-based point-and-click adventure game. Download link coming soon.",
+    "description": "A dialogue-based point-and-click adventure game. Talk to your friends and housemates and try to work out your feelings about your own housewarming party. Made during Global Game Jam 2019 (theme: what does home mean to you?).",
     "image": "images/housewarming.png",
     "image_url": "https://tangledwebgames.itch.io/housewarming",
-    "links": []
+    "links": [
+      ["Download", "https://tangledwebgames.itch.io/housewarming"]
+    ]
   },
   "ultraviolet_nowhere": {
     "title": "Ultraviolet Nowhere",
-    "description": "An atmospheric (literally) experience. Point your telescope into the void, and the void may look back. Made for Global Game Jam 2018 (prompt: transmission).",
+    "description": "An atmospheric (literally) experience. Point your telescope into the void, and the void may look back. Made for Global Game Jam 2018 (theme: transmission).",
     "image": "images/ultraviolet_nowhere.png",
-    "image_url": "https://tangledwebgames.itch.io/ultraviolet_nowhere",
+    "image_url": "https://l-e-webb.github.io/ultraviolet_nowhere",
     "links": [
-      ["Play in browser", "https://l-e-webb.github.io/ultraviolet_nowhere"]
+      ["Play", "https://l-e-webb.github.io/ultraviolet_nowhere"]
     ]
   },
   "bad_moon": {
     "title": "Bad Moon",
-    "description": "A short action game. Fly around on rocket skates and fight your way through waves of malicious drones. Made for Global Game Jam 2017 (prompt: waves).",
+    "description": "A short action game. Fly around on rocket skates and fight your way through waves of malicious drones. Made during Global Game Jam 2017 (theme: waves).",
     "image": "images/bad_moon.png",
     "image_url": "https://calamityjive.itch.io/badmoon",
     "links": [
-      ["Play in browser", "https://calamityjive.itch.io/badmoon"]
+      ["Play", "https://calamityjive.itch.io/badmoon"]
+    ]
+  },
+  "gemini": {
+    "title": "Gemini",
+    "description": "A turn-based combat game with a dichotomy-based stat system. Choose two character classes to face off against the Gemini, a pair of fearsome enemies. Made during Global Game Jam 2022 (theme: duality).",
+    "image": "images/gemini.png",
+    "image_url": "https://tangledwebgames.itch.io/gemini",
+    "links": [
+      ["Download", "https://tangledwebgames.itch.io/gemini"]
+    ]
+  },
+  "crown_of_thorns": {
+    "title": "Crown of Thorns",
+    "description": "Crown of Thorns is an atmospheric adventure game made with RPGMaker. There is no combat, only exploration, puzzles, and a slowly unraveling mystery.",
+    "image": "images/crown_of_thorns.png",
+    "image_url": "https://store.steampowered.com/app/2212810/Crown_of_Thorns/",
+    "links": [
+      ["Steam", "https://store.steampowered.com/app/2212810/Crown_of_Thorns/"],
+      ["itch.io", "https://tangledwebgames.itch.io/crown-of-thorns"]
+    ]
+  },
+  "root_pig": {
+    "title": "Root Pig",
+    "description": "A solitary pig wanders a forested island, seeking tuffles and uncovering whimsical remanants of the past. Made during Global Game Jam 2023 (theme: roots).",
+    "image": "images/root_pig.gif",
+    "image_url": "https://ef5005.itch.io/root-pig",
+    "links": [
+      ["Download", "https://ef5005.itch.io/root-pig"]
     ]
   }
 };
@@ -161,24 +201,27 @@ function makeLinkTag(text, url) {
 }
 
 function addEntries() {
-  var androidAppSection = document.getElementById("androidAppSection");
-  androidAppSection.appendChild(getEntryFragment("guardian_science_reader"));
-  androidAppSection.appendChild(getEntryFragment("book_listing"));
-  androidAppSection.appendChild(getEntryFragment("budabest_guide"));
-  var mobileGameSection = document.getElementById("mobileGameSection");
-  mobileGameSection.appendChild(getEntryFragment("crossfade"));
-  mobileGameSection.appendChild(getEntryFragment("space_kerfuffle"));
-  mobileGameSection.appendChild(getEntryFragment("outbreak"));
-  var mathSection = document.getElementById("mathSection");
-  mathSection.appendChild(getEntryFragment("stereographic_maze"));
-  mathSection.appendChild(getEntryFragment("asteroidal_projection"));
-  mathSection.appendChild(getEntryFragment("interpolate"));
-  mathSection.appendChild(getEntryFragment("crossfade"));
-  var desktopGameSection = document.getElementById("gamesSection");
-  desktopGameSection.appendChild(getEntryFragment("the_blue_room"));
-  desktopGameSection.appendChild(getEntryFragment("housewarming"));
-  desktopGameSection.appendChild(getEntryFragment("ultraviolet_nowhere"));
-  desktopGameSection.appendChild(getEntryFragment("bad_moon"));
+  var commercialAppsSection = document.getElementById("commercialAppsSection");
+  commercialAppsSection.appendChild(getEntryFragment("dat_one"));
+  commercialAppsSection.appendChild(getEntryFragment("crossfade"));
+  var demoAppsSection = document.getElementById("demoAppsSection");
+  demoAppsSection.appendChild(getEntryFragment("guardian_science_reader"));
+  demoAppsSection.appendChild(getEntryFragment("book_listing"));
+  demoAppsSection.appendChild(getEntryFragment("budabest_guide"));
+  demoAppsSection.appendChild(getEntryFragment("space_kerfuffle"));
+  demoAppsSection.appendChild(getEntryFragment("outbreak"));
+  var gameSection = document.getElementById("gamesSection");
+  gameSection.appendChild(getEntryFragment("crown_of_thorns"));
+  gameSection.appendChild(getEntryFragment("the_blue_room"));
+  gameSection.appendChild(getEntryFragment("crossfade"));
+  gameSection.appendChild(getEntryFragment("stereographic_maze"));
+  gameSection.appendChild(getEntryFragment("asteroidal_projection"));
+  var gameJamSection = document.getElementById("gameJamSection");
+  gameJamSection.appendChild(getEntryFragment("root_pig"));
+  gameJamSection.appendChild(getEntryFragment("gemini"));
+  gameJamSection.appendChild(getEntryFragment("housewarming"));
+  gameJamSection.appendChild(getEntryFragment("ultraviolet_nowhere"));
+  gameJamSection.appendChild(getEntryFragment("bad_moon"));
 }
 
 addEntries();
